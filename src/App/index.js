@@ -3,17 +3,17 @@ import './App.css';
 import WelcomeMessage from './WelcomeMessage';
 import styled, {css} from 'styled-components';
 
-const MyButton = styled.div `
-  color: green;
-  ${props => props.primary && css`
-    background: yelllow;
-    color: palevioletred;
-  `}
-`
-const TomatoButton = styled(MyButton)`
-  color: tomato;
-  border-color: tomato;
-`;
+// const MyButton = styled.div `
+//   color: green;
+//   ${props => props.primary && css`
+//     background: yelllow;
+//     color: palevioletred;
+//   `}
+// `
+// const TomatoButton = styled(MyButton)`
+//   color: tomato;
+//   border-color: tomato;
+// `;
 
 
 class App extends Component {
@@ -21,9 +21,9 @@ class App extends Component {
     return (
       <div>
         <WelcomeMessage name="CryptoDash"/>
-        <MyButton>Hello</MyButton>
+        {/* <MyButton>Hello</MyButton>
         <MyButton primary>Hello</MyButton>
-        <TomatoButton>Tomato</TomatoButton>
+        <TomatoButton>Tomato</TomatoButton> */}
       </div>
     );
   }
