@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import WelcomeMessage from './WelcomeMessage';
-import styled, {css} from 'styled-components';
+//import styled, {css} from 'styled-components';
 import AppLayout from './AppLayout';
+import AppBar from './AppBar';
 
 // const MyButton = styled.div `
 //   color: green;
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <div>
         <AppLayout>
+          <AppBar></AppBar>
           <WelcomeMessage name="CryptoDash"/>
         </AppLayout>
         
