@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import WelcomeMessage from './WelcomeMessage';
+import Settings from '../Settings';
 //import styled, {css} from 'styled-components';
 import AppLayout from './AppLayout';
 import AppBar from './AppBar';
@@ -25,8 +25,8 @@ class App extends Component {
       <div>
         <AppLayout>
           <AppProvider>
-            <AppBar></AppBar>
-            <WelcomeMessage name="CryptoDash"/>
+            <AppBar/>
+            <Settings/>
           </AppProvider>
           
         </AppLayout>
